@@ -6,10 +6,7 @@ const PortfolioGraph = ({ data }) => {
         date: new Date(point.date).toLocaleString(),
         portfolioValue: Number(point.value)
     }));
-
-    const minValue = Math.min(...processedData.map(p => p.portfolioValue));
-    const maxValue = Math.max(...processedData.map(p => p.portfolioValue));
-
+    
     return (
         <ResponsiveContainer width="95%" height={450}>
             <LineChart data={processedData}>
