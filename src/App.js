@@ -8,7 +8,7 @@ import { getPortfolios, getTrades } from './services/api';
 import './App.css';
 
 const App = () => {
-  const [models, setModels] = useState([
+  const [models] = useState([
     { id: "XGBOOST_6H", name: "XGBoost Model 6H", description: "XGBoost 6-hour prediction model" },
     { id: "XGBOOST_24H", name: "XGBoost Model 24H", description: "XGBoost 24-hour prediction model" },
     { id: "XGBOOST_48H", name: "XGBoost Model 48H", description: "XGBoost 48-hour prediction model" },
