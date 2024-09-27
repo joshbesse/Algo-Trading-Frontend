@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // django API base URL
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://algo-trading-backend.herokuapp.com';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://algo-trading-backend.herokuapp.com/';
 
 // fetch all portfolio values for a specific model
 export const getPortfolios = async (modelType) => {
